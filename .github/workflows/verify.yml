@@ -1,0 +1,35 @@
+# Verifies the published dataset still matches the engine it was generated from.
+#
+# The dataset's whole value is that it is derived from tested code rather than
+# hand-transcribed. That guarantee decays the moment someone edits a JSON file
+# directly, or the upstream engine changes without a regeneration. This job
+# fails on either.
+#
+# Requires the generator repo checked out alongside; adjust the source path to
+# wherever lib/bik/engine.ts lives.
+
+name: verify dataset
+
+on:
+  push:
+  pull_request:
+  schedule:
+    # Weekly, so upstream drift surfaces without waiting for a commit here.
+    - cron: '0 6 * * 1'
+
+jobs:
+  json-valid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every JSON file parses
+        run: |
+          for f in *.json; do
+            python3 -c "import json,sys; json.load(open('$f'))" \
+              || { echo "::error file=$f::invalid JSON"; exit 1; }
+            echo "ok: $f"
+          done
+
+      - name: README rate tables match the JSON
+        run: python3 .github/scripts/check_readme.py

@@ -1,0 +1,97 @@
+{
+  "source": "https://github.com/orbis-io/uk-bik-rates",
+  "generatedFrom": "lib/bik/engine.ts (orbisio.co.uk company car tax calculator)",
+  "disclaimer": "Indicative reference data, not tax advice. Figures reflect HMRC appropriate-percentage policy announced to 2029/30 and the Autumn Budget 2025 eVED measure. Verify against HMRC guidance before relying on these figures.",
+  "description": "Company car tax appropriate percentages by fuel type and tax year. The percentage is applied to the vehicle P11D value to give the taxable benefit.",
+  "taxYears": [
+    {
+      "key": 2026,
+      "label": "2026/27"
+    },
+    {
+      "key": 2027,
+      "label": "2027/28"
+    },
+    {
+      "key": 2028,
+      "label": "2028/29"
+    },
+    {
+      "key": 2029,
+      "label": "2029/30"
+    }
+  ],
+  "zeroEmission": {
+    "description": "Battery electric vehicles. Selected by fuel type, never by CO2 = 0, so a zero-CO2 PHEV does not fall into this schedule.",
+    "byTaxYear": [
+      {
+        "taxYear": "2026/27",
+        "appropriatePercentage": 4
+      },
+      {
+        "taxYear": "2027/28",
+        "appropriatePercentage": 5
+      },
+      {
+        "taxYear": "2028/29",
+        "appropriatePercentage": 7
+      },
+      {
+        "taxYear": "2029/30",
+        "appropriatePercentage": 9
+      }
+    ]
+  },
+  "plugInHybrid": {
+    "description": "1 to 50 g/km. Banded by electric-only range to 2027/28, then reset to a single flat rate.",
+    "note": "From 2028/29 the electric-range banding no longer applies: all 1-50 g/km vehicles take 18% (2028/29) then 19% (2029/30).",
+    "byTaxYear": [
+      {
+        "taxYear": "2026/27",
+        "rangeBanded": true,
+        "flatRate": null
+      },
+      {
+        "taxYear": "2027/28",
+        "rangeBanded": true,
+        "flatRate": null
+      },
+      {
+        "taxYear": "2028/29",
+        "rangeBanded": false,
+        "flatRate": 18
+      },
+      {
+        "taxYear": "2029/30",
+        "rangeBanded": false,
+        "flatRate": 19
+      }
+    ]
+  },
+  "internalCombustion": {
+    "description": "51 g/km and above, petrol and diesel. Base table frozen to 2027/28, then +1 percentage point per year.",
+    "caps": [
+      {
+        "taxYear": "2026/27",
+        "cap": 37
+      },
+      {
+        "taxYear": "2027/28",
+        "cap": 37
+      },
+      {
+        "taxYear": "2028/29",
+        "cap": 38
+      },
+      {
+        "taxYear": "2029/30",
+        "cap": 39
+      }
+    ],
+    "dieselSurcharge": {
+      "percentagePoints": 4,
+      "appliesTo": "Diesel vehicles not certified to RDE2",
+      "note": "Applied to the base percentage before the yearly uplift, and subject to the same cap."
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "source": "https://github.com/orbis-io/uk-bik-rates",
+  "generatedFrom": "lib/bik/engine.ts (orbisio.co.uk company car tax calculator)",
+  "disclaimer": "Indicative reference data, not tax advice. Figures reflect HMRC appropriate-percentage policy announced to 2029/30 and the Autumn Budget 2025 eVED measure. Verify against HMRC guidance before relying on these figures.",
+  "name": "UK Company Car Tax (BIK) rates, 2026/27 to 2029/30",
+  "licence": "MIT",
+  "generatedAt": "2026-08-04T09:01:47.155Z",
+  "coverage": {
+    "taxYears": [
+      "2026/27",
+      "2027/28",
+      "2028/29",
+      "2029/30"
+    ],
+    "fuels": [
+      "electric",
+      "plug-in hybrid",
+      "petrol",
+      "diesel"
+    ],
+    "includes": [
+      "Zero-emission appropriate percentages (4/5/7/9)",
+      "CO2 bands for 51 g/km and above",
+      "PHEV electric-range sub-bands for 1 to 50 g/km",
+      "Non-RDE2 diesel surcharge",
+      "eVED pay-per-mile rates from April 2028"
+    ],
+    "excludes": [
+      "Income tax band thresholds (these change independently and are not modelled here)",
+      "Employer Class 1A National Insurance rate",
+      "Van benefit charge and fuel benefit charge",
+      "Scottish and Welsh income tax rate variations"
+    ]
+  },
+  "files": [
+    "appropriate-percentages.json",
+    "co2-bands.json",
+    "phev-range-bands.json",
+    "eved.json"
+  ]
+}

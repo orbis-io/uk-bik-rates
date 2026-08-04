@@ -1,0 +1,22 @@
+{
+  "source": "https://github.com/orbis-io/uk-bik-rates",
+  "generatedFrom": "lib/bik/engine.ts (orbisio.co.uk company car tax calculator)",
+  "disclaimer": "Indicative reference data, not tax advice. Figures reflect HMRC appropriate-percentage policy announced to 2029/30 and the Autumn Budget 2025 eVED measure. Verify against HMRC guidance before relying on these figures.",
+  "description": "Electric Vehicle Excise Duty (eVED), the pay-per-mile charge announced at Autumn Budget 2025 and applying from April 2028.",
+  "effectiveFrom": {
+    "date": "2028-04-01",
+    "taxYear": "2028/29"
+  },
+  "ratesPerMile": {
+    "currency": "GBP",
+    "electric": 0.03,
+    "plugInHybrid": 0.015,
+    "petrol": 0,
+    "diesel": 0
+  },
+  "notes": [
+    "Battery electric vehicles pay 3p per mile; plug-in hybrids pay 1.5p per mile.",
+    "Conventional hybrids, petrol and diesel vehicles are not subject to eVED.",
+    "eVED is separate from company car tax and is charged on miles driven, not on the P11D value."
+  ]
+}

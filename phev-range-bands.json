@@ -1,0 +1,69 @@
+{
+  "source": "https://github.com/orbis-io/uk-bik-rates",
+  "generatedFrom": "lib/bik/engine.ts (orbisio.co.uk company car tax calculator)",
+  "disclaimer": "Indicative reference data, not tax advice. Figures reflect HMRC appropriate-percentage policy announced to 2029/30 and the Autumn Budget 2025 eVED measure. Verify against HMRC guidance before relying on these figures.",
+  "description": "Appropriate percentage for plug-in hybrids emitting 1 to 50 g/km, by electric-only range. Range banding applies to 2027/28 only.",
+  "unit": "miles (electric-only range)",
+  "bands": [
+    {
+      "rangeFrom": 130,
+      "rangeTo": null,
+      "label": "130 miles and over",
+      "basePercentage": 3,
+      "byTaxYear": {
+        "2026/27": 4,
+        "2027/28": 5,
+        "2028/29": 18,
+        "2029/30": 19
+      }
+    },
+    {
+      "rangeFrom": 70,
+      "rangeTo": 129,
+      "label": "70 to 129 miles",
+      "basePercentage": 6,
+      "byTaxYear": {
+        "2026/27": 7,
+        "2027/28": 8,
+        "2028/29": 18,
+        "2029/30": 19
+      }
+    },
+    {
+      "rangeFrom": 40,
+      "rangeTo": 69,
+      "label": "40 to 69 miles",
+      "basePercentage": 9,
+      "byTaxYear": {
+        "2026/27": 10,
+        "2027/28": 11,
+        "2028/29": 18,
+        "2029/30": 19
+      }
+    },
+    {
+      "rangeFrom": 30,
+      "rangeTo": 39,
+      "label": "30 to 39 miles",
+      "basePercentage": 13,
+      "byTaxYear": {
+        "2026/27": 14,
+        "2027/28": 15,
+        "2028/29": 18,
+        "2029/30": 19
+      }
+    },
+    {
+      "rangeFrom": 0,
+      "rangeTo": 29,
+      "label": "under 30 miles",
+      "basePercentage": 15,
+      "byTaxYear": {
+        "2026/27": 16,
+        "2027/28": 17,
+        "2028/29": 18,
+        "2029/30": 19
+      }
+    }
+  ]
+}
