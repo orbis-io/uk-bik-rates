@@ -89,7 +89,7 @@ Regenerated whenever rates change, which in practice means each Budget and any i
 ## Related
 
 - [Company car tax calculator](https://orbisio.co.uk/blog/electric-company-car-bik-2026) — the calculator this data is generated from
-- The Four-Year BIK Cliff — analysis of what the 2026/27 to 2029/30 schedule does to EV and PHEV costs. Analysis forthcoming; this section will link it on publication.
+- [The Four-Year BIK Cliff](https://orbisio.co.uk/blog/four-year-bik-cliff) — analysis of what the 2026/27 to 2029/30 schedule does to EV and PHEV costs, generated from this dataset
 
 ## Licence
 
