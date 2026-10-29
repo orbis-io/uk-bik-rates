@@ -1,250 +1,250 @@
 {
   "source": "https://github.com/orbis-io/uk-bik-rates",
   "generatedFrom": "lib/bik/engine.ts (orbisio.co.uk company car tax calculator)",
-  "disclaimer": "Indicative reference data, not tax advice. Figures reflect HMRC appropriate-percentage policy announced to 2029/30 and the Autumn Budget 2025 eVED measure. Verify against HMRC guidance before relying on these figures.",
+  "disclaimer": "Indicative reference data, not tax advice. 2026/27 to 2029/30 are the ITEPA 2003 s139 tables as set by Finance Act 2023 and Finance Act 2025; 2030/31 is as announced at Budget 2026 (28 October 2026), to be legislated in Finance Bill 2026-27. eVED per Autumn Budget 2025. Verify against HMRC guidance before relying on these figures.",
   "description": "Appropriate percentage by tailpipe CO2 for petrol and diesel vehicles at 51 g/km and above. Percentages shown are before any non-RDE2 diesel surcharge.",
   "unit": "g/km",
   "bands": [
     {
       "co2From": 51,
       "co2To": 54,
-      "basePercentage": 16,
       "byTaxYear": {
-        "2026/27": 16,
-        "2027/28": 16,
-        "2028/29": 17,
-        "2029/30": 18
+        "2026/27": 17,
+        "2027/28": 18,
+        "2028/29": 19,
+        "2029/30": 20,
+        "2030/31": 21
       }
     },
     {
       "co2From": 55,
       "co2To": 59,
-      "basePercentage": 17,
       "byTaxYear": {
-        "2026/27": 17,
-        "2027/28": 17,
-        "2028/29": 18,
-        "2029/30": 19
+        "2026/27": 18,
+        "2027/28": 19,
+        "2028/29": 20,
+        "2029/30": 21,
+        "2030/31": 22
       }
     },
     {
       "co2From": 60,
       "co2To": 64,
-      "basePercentage": 18,
       "byTaxYear": {
-        "2026/27": 18,
-        "2027/28": 18,
-        "2028/29": 19,
-        "2029/30": 20
+        "2026/27": 19,
+        "2027/28": 20,
+        "2028/29": 21,
+        "2029/30": 22,
+        "2030/31": 23
       }
     },
     {
       "co2From": 65,
       "co2To": 69,
-      "basePercentage": 19,
       "byTaxYear": {
-        "2026/27": 19,
-        "2027/28": 19,
-        "2028/29": 20,
-        "2029/30": 21
+        "2026/27": 20,
+        "2027/28": 21,
+        "2028/29": 22,
+        "2029/30": 23,
+        "2030/31": 24
       }
     },
     {
       "co2From": 70,
       "co2To": 74,
-      "basePercentage": 20,
       "byTaxYear": {
-        "2026/27": 20,
-        "2027/28": 20,
-        "2028/29": 21,
-        "2029/30": 22
+        "2026/27": 21,
+        "2027/28": 21,
+        "2028/29": 22,
+        "2029/30": 23,
+        "2030/31": 24
       }
     },
     {
       "co2From": 75,
       "co2To": 79,
-      "basePercentage": 21,
       "byTaxYear": {
         "2026/27": 21,
         "2027/28": 21,
         "2028/29": 22,
-        "2029/30": 23
+        "2029/30": 23,
+        "2030/31": 24
       }
     },
     {
       "co2From": 80,
       "co2To": 84,
-      "basePercentage": 22,
       "byTaxYear": {
         "2026/27": 22,
         "2027/28": 22,
         "2028/29": 23,
-        "2029/30": 24
+        "2029/30": 24,
+        "2030/31": 25
       }
     },
     {
       "co2From": 85,
       "co2To": 89,
-      "basePercentage": 23,
       "byTaxYear": {
         "2026/27": 23,
         "2027/28": 23,
         "2028/29": 24,
-        "2029/30": 25
+        "2029/30": 25,
+        "2030/31": 26
       }
     },
     {
       "co2From": 90,
       "co2To": 94,
-      "basePercentage": 24,
       "byTaxYear": {
         "2026/27": 24,
         "2027/28": 24,
         "2028/29": 25,
-        "2029/30": 26
+        "2029/30": 26,
+        "2030/31": 27
       }
     },
     {
       "co2From": 95,
       "co2To": 99,
-      "basePercentage": 25,
       "byTaxYear": {
         "2026/27": 25,
         "2027/28": 25,
         "2028/29": 26,
-        "2029/30": 27
+        "2029/30": 27,
+        "2030/31": 28
       }
     },
     {
       "co2From": 100,
       "co2To": 104,
-      "basePercentage": 26,
       "byTaxYear": {
         "2026/27": 26,
         "2027/28": 26,
         "2028/29": 27,
-        "2029/30": 28
+        "2029/30": 28,
+        "2030/31": 29
       }
     },
     {
       "co2From": 105,
       "co2To": 109,
-      "basePercentage": 27,
       "byTaxYear": {
         "2026/27": 27,
         "2027/28": 27,
         "2028/29": 28,
-        "2029/30": 29
+        "2029/30": 29,
+        "2030/31": 30
       }
     },
     {
       "co2From": 110,
       "co2To": 114,
-      "basePercentage": 28,
       "byTaxYear": {
         "2026/27": 28,
         "2027/28": 28,
         "2028/29": 29,
-        "2029/30": 30
+        "2029/30": 30,
+        "2030/31": 31
       }
     },
     {
       "co2From": 115,
       "co2To": 119,
-      "basePercentage": 29,
       "byTaxYear": {
         "2026/27": 29,
         "2027/28": 29,
         "2028/29": 30,
-        "2029/30": 31
+        "2029/30": 31,
+        "2030/31": 32
       }
     },
     {
       "co2From": 120,
       "co2To": 124,
-      "basePercentage": 30,
       "byTaxYear": {
         "2026/27": 30,
         "2027/28": 30,
         "2028/29": 31,
-        "2029/30": 32
+        "2029/30": 32,
+        "2030/31": 33
       }
     },
     {
       "co2From": 125,
       "co2To": 129,
-      "basePercentage": 31,
       "byTaxYear": {
         "2026/27": 31,
         "2027/28": 31,
         "2028/29": 32,
-        "2029/30": 33
+        "2029/30": 33,
+        "2030/31": 34
       }
     },
     {
       "co2From": 130,
       "co2To": 134,
-      "basePercentage": 32,
       "byTaxYear": {
         "2026/27": 32,
         "2027/28": 32,
         "2028/29": 33,
-        "2029/30": 34
+        "2029/30": 34,
+        "2030/31": 35
       }
     },
     {
       "co2From": 135,
       "co2To": 139,
-      "basePercentage": 33,
       "byTaxYear": {
         "2026/27": 33,
         "2027/28": 33,
         "2028/29": 34,
-        "2029/30": 35
+        "2029/30": 35,
+        "2030/31": 36
       }
     },
     {
       "co2From": 140,
       "co2To": 144,
-      "basePercentage": 34,
       "byTaxYear": {
         "2026/27": 34,
         "2027/28": 34,
         "2028/29": 35,
-        "2029/30": 36
+        "2029/30": 36,
+        "2030/31": 37
       }
     },
     {
       "co2From": 145,
       "co2To": 149,
-      "basePercentage": 35,
       "byTaxYear": {
         "2026/27": 35,
         "2027/28": 35,
         "2028/29": 36,
-        "2029/30": 37
+        "2029/30": 37,
+        "2030/31": 38
       }
     },
     {
       "co2From": 150,
       "co2To": 154,
-      "basePercentage": 36,
       "byTaxYear": {
         "2026/27": 36,
         "2027/28": 36,
         "2028/29": 37,
-        "2029/30": 38
+        "2029/30": 38,
+        "2030/31": 39
       }
     },
     {
       "co2From": 155,
       "co2To": null,
-      "basePercentage": 37,
       "byTaxYear": {
         "2026/27": 37,
         "2027/28": 37,
         "2028/29": 38,
-        "2029/30": 39
+        "2029/30": 39,
+        "2030/31": 40
       }
     }
   ]

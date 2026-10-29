@@ -1,24 +1,33 @@
 {
   "source": "https://github.com/orbis-io/uk-bik-rates",
   "generatedFrom": "lib/bik/engine.ts (orbisio.co.uk company car tax calculator)",
-  "disclaimer": "Indicative reference data, not tax advice. Figures reflect HMRC appropriate-percentage policy announced to 2029/30 and the Autumn Budget 2025 eVED measure. Verify against HMRC guidance before relying on these figures.",
+  "disclaimer": "Indicative reference data, not tax advice. 2026/27 to 2029/30 are the ITEPA 2003 s139 tables as set by Finance Act 2023 and Finance Act 2025; 2030/31 is as announced at Budget 2026 (28 October 2026), to be legislated in Finance Bill 2026-27. eVED per Autumn Budget 2025. Verify against HMRC guidance before relying on these figures.",
   "description": "Company car tax appropriate percentages by fuel type and tax year. The percentage is applied to the vehicle P11D value to give the taxable benefit.",
   "taxYears": [
     {
       "key": 2026,
-      "label": "2026/27"
+      "label": "2026/27",
+      "source": "Finance Act 2023 s11(5)-(6)"
     },
     {
       "key": 2027,
-      "label": "2027/28"
+      "label": "2027/28",
+      "source": "Finance Act 2023 s11(7)-(8)"
     },
     {
       "key": 2028,
-      "label": "2028/29"
+      "label": "2028/29",
+      "source": "Finance Act 2025 s5"
     },
     {
       "key": 2029,
-      "label": "2029/30"
+      "label": "2029/30",
+      "source": "Finance Act 2025 s6"
+    },
+    {
+      "key": 2030,
+      "label": "2030/31",
+      "source": "Budget 2026 (28 Oct 2026), to be legislated in Finance Bill 2026-27"
     }
   ],
   "zeroEmission": {
@@ -39,12 +48,15 @@
       {
         "taxYear": "2029/30",
         "appropriatePercentage": 9
+      },
+      {
+        "taxYear": "2030/31",
+        "appropriatePercentage": 10
       }
     ]
   },
   "plugInHybrid": {
-    "description": "1 to 50 g/km. Banded by electric-only range to 2027/28, then reset to a single flat rate.",
-    "note": "From 2028/29 the electric-range banding no longer applies: all 1-50 g/km vehicles take 18% (2028/29) then 19% (2029/30).",
+    "description": "1 to 50 g/km. Banded by electric-only range to 2027/28, then a single rate for all 1-50 g/km vehicles.",
     "byTaxYear": [
       {
         "taxYear": "2026/27",
@@ -65,11 +77,16 @@
         "taxYear": "2029/30",
         "rangeBanded": false,
         "flatRate": 19
+      },
+      {
+        "taxYear": "2030/31",
+        "rangeBanded": false,
+        "flatRate": 20
       }
     ]
   },
   "internalCombustion": {
-    "description": "51 g/km and above, petrol and diesel. Base table frozen to 2027/28, then +1 percentage point per year.",
+    "description": "51 g/km and above, petrol and diesel: the s139 table for each tax year (see co2-bands.json), capped at that year's maximum.",
     "caps": [
       {
         "taxYear": "2026/27",
@@ -86,12 +103,16 @@
       {
         "taxYear": "2029/30",
         "cap": 39
+      },
+      {
+        "taxYear": "2030/31",
+        "cap": 40
       }
     ],
     "dieselSurcharge": {
       "percentagePoints": 4,
       "appliesTo": "Diesel vehicles not certified to RDE2",
-      "note": "Applied to the base percentage before the yearly uplift, and subject to the same cap."
+      "note": "Added to the year's percentage, then capped at that year's maximum (ITEPA 2003 s141)."
     }
   }
 }

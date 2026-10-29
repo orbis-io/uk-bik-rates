@@ -1,8 +1,8 @@
 {
   "source": "https://github.com/orbis-io/uk-bik-rates",
   "generatedFrom": "lib/bik/engine.ts (orbisio.co.uk company car tax calculator)",
-  "disclaimer": "Indicative reference data, not tax advice. Figures reflect HMRC appropriate-percentage policy announced to 2029/30 and the Autumn Budget 2025 eVED measure. Verify against HMRC guidance before relying on these figures.",
-  "description": "Electric Vehicle Excise Duty (eVED), the pay-per-mile charge announced at Autumn Budget 2025 and applying from April 2028.",
+  "disclaimer": "Indicative reference data, not tax advice. 2026/27 to 2029/30 are the ITEPA 2003 s139 tables as set by Finance Act 2023 and Finance Act 2025; 2030/31 is as announced at Budget 2026 (28 October 2026), to be legislated in Finance Bill 2026-27. eVED per Autumn Budget 2025. Verify against HMRC guidance before relying on these figures.",
+  "description": "Electric Vehicle Excise Duty (eVED), the pay-per-mile charge announced at Autumn Budget 2025 and applying from April 2028. Rates rise with CPI from 2029/30 (Budget 2026); the uprated rates are not yet published.",
   "effectiveFrom": {
     "date": "2028-04-01",
     "taxYear": "2028/29"

@@ -16,7 +16,8 @@ import json
 import re
 import sys
 
-YEARS = ["2026/27", "2027/28", "2028/29", "2029/30"]
+# Tax years come from the data, so a new year cannot silently go unchecked.
+YEARS = [t["label"] for t in json.load(open("appropriate-percentages.json", encoding="utf-8"))["taxYears"]]
 
 failures = []
 

@@ -1,16 +1,17 @@
 {
   "source": "https://github.com/orbis-io/uk-bik-rates",
   "generatedFrom": "lib/bik/engine.ts (orbisio.co.uk company car tax calculator)",
-  "disclaimer": "Indicative reference data, not tax advice. Figures reflect HMRC appropriate-percentage policy announced to 2029/30 and the Autumn Budget 2025 eVED measure. Verify against HMRC guidance before relying on these figures.",
-  "name": "UK Company Car Tax (BIK) rates, 2026/27 to 2029/30",
+  "disclaimer": "Indicative reference data, not tax advice. 2026/27 to 2029/30 are the ITEPA 2003 s139 tables as set by Finance Act 2023 and Finance Act 2025; 2030/31 is as announced at Budget 2026 (28 October 2026), to be legislated in Finance Bill 2026-27. eVED per Autumn Budget 2025. Verify against HMRC guidance before relying on these figures.",
+  "name": "UK Company Car Tax (BIK) rates, 2026/27 to 2030/31",
   "licence": "MIT",
-  "generatedAt": "2026-08-04T09:01:47.155Z",
+  "generatedAt": "2026-10-29T12:00:00.000Z",
   "coverage": {
     "taxYears": [
       "2026/27",
       "2027/28",
       "2028/29",
-      "2029/30"
+      "2029/30",
+      "2030/31"
     ],
     "fuels": [
       "electric",
@@ -19,7 +20,7 @@
       "diesel"
     ],
     "includes": [
-      "Zero-emission appropriate percentages (4/5/7/9)",
+      "Zero-emission appropriate percentages (4/5/7/9/10)",
       "CO2 bands for 51 g/km and above",
       "PHEV electric-range sub-bands for 1 to 50 g/km",
       "Non-RDE2 diesel surcharge",
